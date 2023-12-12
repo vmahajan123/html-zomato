@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .main {
+            background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+            background-position: center center;
+            background-size: max(1200px, 100vw);
+            background-repeat: no-repeat;
+            height: 70vh;
+            position: relative;
+        }
+
+        nav {
+            max-width: 60vw;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            height: 100px;
+        }
+
+        nav button {
+            z-index: 10;
+            position: relative;
+        }
+
+        .btn {
+            padding: 4px 8px;
+            font-weight: bold;
+            background-color: rgba(246, 238, 238, 0.086);
+            border-radius: 4px;
+            border: 1px solid white;
+            color: white;
+            cursor: pointer;
+            justify-content: right;
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+
+
+
+        .zomato_heading {
+            font-family: 'Pacifico', cursive;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            gap: 100px;
+            padding: 0 30px;
+            font-size: 100px;
+            font-weight: 900;
+
+        }
+
+        .font {
+            font-family: 'Martel Sans', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            gap: 23px;
+            padding: 0 30px;
+            font-size: 50px;
+            font-weight: 400;
+        }
+
+        .Separation {
+            height: 7px;
+            background-color: rgb(41, 38, 38);
+            position: relative;
+            z-index: 20;
+        }
+
+        .white {
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 25px;
+            padding: 25px;
+            font-family: 'Pacifico', cursive;
+
+        }
+
+        .black {
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 370px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            justify-content: center;
+            margin: 25px;
+            padding: 25px;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            color: black;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .text-in {
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            max-width: 70vw;
+            margin: auto;
+            color: white;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 25px;
+            padding: 25px;
+            font-weight: 400;
+        }
+
+        .bond {
+            margin: 3px;
+            padding: 3px;
+            font-weight: 400;
+            text-align: right;
+        }
+        .heading2 {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+            padding: 5px;
+            font-weight: 500;
+        }
+        .para {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+            padding: 5px;
+            margin-top: 10px;
+            font-weight: 300;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        span {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: black;
+
+        }
+        .griditem {
+            color: black;
+            background-color: white;
+            border:1px solid white;
+            border-radius: 4px;
+            border-radius: 3px;
+            margin: auto;
+            margin-bottom:20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-weight: bolder;
+        }
+        .griditem:hover {
+            background-color: red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div>
+                <button class="btn">Add Restaurant</button>
+                <button class="btn">Login</button>
+                <button class="btn">Sign-up</button>
+            </div>
+        </nav>
+        <div class="box">
+
+        </div>
+        <div class="hero">
+            <h1 class="zomato_heading">Zomato</h1>
+
+        </div>
+        <div class="hero-hero">
+            <h2 class="font">Find the best restaurants, cafés</h2>
+        </div>
+
+        <div class="hero-hero">
+            <h2 class="font">and bars in India</h2>
+        </div>
+
+    </div>
+
+    <div class="Separation"></div>
+
+
+    <h1 class="heading2">
+        Popular locations in   <img src="https://b.zmtcdn.com/images/flags_z10/in.png?output-format=webp" alt="Indian Flag">  India</h1>
+    <p class="para">
+        From swanky upscale restaurants to the cosiest hidden gems serving the most incredible food,<br>
+        Zomato covers it all. Explore menus, and millions of restaurant photos and reviews from users<br>
+        like you, to find your next great meal.
+    </p>
+    <span class="grid-container">
+        <div class="griditem">Agra Restaurant</div>
+        <div class="griditem">Ahmedabad Restaurant</div>
+        <div class="griditem">Ajmer Restaurant</div>
+        <div class="griditem">Alappuzha Restaurant</div>
+        <div class="griditem">Allahabad Restaurant</div>
+        <div class="griditem">Amravati Restaurant</div>
+        <div class="griditem">Amritsar Restaurant</div>
+        <div class="griditem">Aurangabad Restaurant</div>
+        <div class="griditem">Bengaluru Restaurant</div>
+        <div class="griditem">Bhopal Restaurant</div>
+        <div class="griditem">Bhubaneshwar Restaurant</div>
+        <div class="griditem">Chandigarh Restaurant</div>
+        <div class="griditem">Chennai Restaurant</div>
+        <div class="griditem">Coimbatore Restaurant</div>
+        <div class="griditem">Cuttack Restaurant</div>
+        <div class="griditem">Darjeeling Restaurant</div>
+        <div class="griditem">Dehradun Restaurant</div>
+        <div class="griditem">Delhi NCR Restaurant</div>
+        <div class="griditem">Dharamshala Restaurant</div>
+        <div class="griditem">Gangtok Restaurant</div>
+        <div class="griditem">GoaRestaurant</div>
+
+
+    </span>
+
+    <div class="Separation"></div>
+
+
+
+    <section>
+        <div class="text-in">
+            <p class="bond">The sizzle of steak on a hot grill, releasing an irresistible aroma.</p>
+            <br>
+            <p class="bond">Buttery mashed potatoes piled high beside
+                it, a stream of savory gravy cascading down.</p>
+
+            <br>
+            <p class="bond">Roasted vegetables, glistening with olive oil, offer their
+                caramelized sweetness.</p>
+        </div>
+
+
+        <div class="black">
+            <h1 class="white">This is The Place Where you will get best Experience</h1>
+            <div>
+                <h1>
+                    Please Login Here
+                </h1>
+                <form>
+                    <table>
+                        <tr>
+                            <td>
+                                Name :
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Name" name="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gender :
+                            </td>
+                            <td>
+                                <input type="radio" name="Gender">Male
+                                <input type="radio" name="Gender">Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Email :
+                            </td>
+                            <td>
+                                <input type="text" placeholder="email" name="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Phone no :
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="">+91</option>
+                                    <option value="">978</option>
+                                    <option value="">979</option>
+                                    <option value="">980</option>
+                                    <option value="">981</option>
+                                </select>
+                                <input type="Phone" placeholder="Phone-no" name="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button>Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+</body>
+
+</html>
